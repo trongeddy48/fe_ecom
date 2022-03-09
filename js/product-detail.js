@@ -53,14 +53,7 @@ let products = [
         image2: './images/bag6_hover.jpg',
         old_price: '400.000 VND',
         curr_price: '300.000 VND'
-    },
-    {
-        name: 'BAG CAROL GREY',
-        image1: './images/bag7.jpg',
-        image2: './images/bag7_hover.jpg',
-        old_price: '400.000 VND',
-        curr_price: '300.000 VND'
-    },
+    }
 ]
 
 let product_list = document.querySelector('#related-products')
