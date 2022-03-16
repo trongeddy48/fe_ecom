@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTT Store</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!-- bootstrap -->
+    <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- logo -->
+    <link rel="icon" href="images/logo.png">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/order.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <!-- mobile menu -->
+        <div class="mobile-menu bg-second">
+            <a href="#" class="mb-logo">DTT Store</a>
+            <span class="mb-menu-toggle" id="mb-menu-toggle">
+                <i class='bx bx-menu'></i>
+            </span>
+        </div>
+        <!-- end mobile menu -->
+        <!-- main header -->
+        <div class="header-wrapper" id="header-wrapper">
+            <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
+                <i class='bx bx-x'></i>
+            </span>
+            <!-- top header -->
+            <div class="bg-second">
+                <div class="top-header container">
+                    <ul class="devided">
+                        <li>
+                            <a href="#">+84345439899</a>
+                        </li>
+                        <li>
+                            <a href="#">dttstore@gmail.com</a>
+                        </li>
+                    </ul>
+                    <ul class="devided">
+                        <li class="dropdown">
+                            <a href="">VND</a>
+                            <i class='bx bxs-chevron-down'></i>
+                            <ul class="dropdown-content">
+                                <li><a href="#">USD</a></li>
+                                <li><a href="#">JPY</a></li>
+                                <li><a href="#">EUR</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">TIẾNG VIỆT</a>
+                            <i class='bx bxs-chevron-down'></i>
+                            <ul class="dropdown-content">
+                                <li><a href="#">ENGLISH</a></li>
+                                <li><a href="#">JAPANESE</a></li>
+                                <li><a href="#">FRENCH</a></li>
+                                <li><a href="#">SPANISH</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">THEO DÕI ĐƠN HÀNG</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end top header -->
+            <!-- mid header -->
+            <div class="bg-main">
+                <div class="mid-header container">
+                    <a href="#" class="logo">DTT Store</a>
+                    <div class="search">
+                        <input type="text" placeholder="Search">
+                        <i class='bx bx-search-alt'></i>
+                    </div>
+                    <ul class="user-menu">
+                        <li><a href="#"><i class='bx bx-bell'></i></a></li>
+                        <li><a href="#"><i class='bx bx-user-circle'></i></a></li>
+                        <li><a href="#"><i class='bx bx-cart'></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end mid header -->
+            <!-- bottom header -->
+            <div class="bg-second">
+                <div class="bottom-header container">
+                    <ul class="main-menu">
+                        <li><a href="#">trang chủ</a></li>
+                        <!-- mega menu -->
+                        <li class="mega-dropdown">
+                            <a href="./products.html">danh mục<i class='bx bxs-chevron-down'></i></a>
+                            <div class="mega-content">
+                                <div class="row">
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <h3>Balo</h3>
+                                            <ul>
+                                                <li><a href="#">Space Series Balo</a></li>
+                                                <li><a href="#">Big Series Balo</a></li>
+                                                <li><a href="#">Fit Series Balo</a></li>
+                                                <li><a href="#">Simple Series Balo</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <h3>Túi xách</h3>
+                                            <ul>
+                                                <li><a href="#">Space Series</a></li>
+                                                <li><a href="#">Big Series</a></li>
+                                                <li><a href="#">Fit Series</a></li>
+                                                <li><a href="#">Simple Series</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <h3>Túi đeo chéo</h3>
+                                            <ul>
+                                                <li><a href="#">Space Series</a></li>
+                                                <li><a href="#">Big Series</a></li>
+                                                <li><a href="#">Fit Series</a></li>
+                                                <li><a href="#">Simple Series</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <h3>Tất cả sản phẩm</h3>
+                                            <ul>
+                                                <li><a href="#">Balo</a></li>
+                                                <li><a href="#">Túi xách</a></li>
+                                                <li><a href="#">Túi đeo chéo</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row img-row">
+                                    <div class="col-3">
+                                        <div class="box">
+                                            <img src="./images/bag7.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="box">
+                                            <img src="./images/bag14.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="box">
+                                            <img src="./images/bag15.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="box">
+                                            <img src="./images/bag9.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- end mega menu -->
+                        <li><a href="#">bài viết</a></li>
+                        <li><a href="#">liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end bottom header -->
+        </div>
+        <!-- end main header -->
+    </header>
+    <!-- end header -->
+
+    <div class="container">
+        <div class="py-5 text-center">
+            <h2>Thông tin thanh toán</h2>
+        </div>
+    </div>
+
+    <div class="row g-5">
+        <div class="col-md-5 col-lg-4 order-md-last">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-primary">Giỏ hàng của bạn</span>
+            <span class="badge bg-primary rounded-pill">3</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Balo KEY Gradient</h6>
+              </div>
+              <span class="text-muted">300000 VND</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                    <h6 class="my-0">Balo KEY Gradient</h6>
+                </div>
+                  <span class="text-muted">300000 VND</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                    <h6 class="my-0">Balo KEY Gradient</h6>
+                </div>
+                  <span class="text-muted">300000 VND</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between bg-light">
+              <div class="text-success">
+                <h6 class="my-0">Mã giảm giá</h6>
+                <small>CHAOEM2022</small>
+              </div>
+              <span class="text-success">-5000 VND</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Tổng (USD)</span>
+              <strong>900000 VND</strong>
+            </li>
+          </ul>
+  
+          <form class="card p-2">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Nhập mã giảm giá">
+              <button type="submit" class="btn btn-secondary">Áp dụng</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-7 col-lg-8">
+          <h4 class="mb-3">Địa chỉ thanh toán</h4>
+          <form class="needs-validation" novalidate="">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label">Họ</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Họ của bạn" value="" required="">
+                <div class="invalid-feedback">
+                    Vui lòng nhập Họ của bạn.
+                </div>
+              </div>
+  
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label">Tên</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Tên của bạn" value="" required="">
+                <div class="invalid-feedback">
+                    Vui lòng nhập Tên của bạn.
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                <div class="invalid-feedback">
+                    Vui lòng nhập Email của bạn.
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="address" class="form-label">Địa chỉ</label>
+                <input type="text" class="form-control" id="address" placeholder="123/2 Võ Thị Sáu..." required="">
+                <div class="invalid-feedback">
+                  Vui lòng nhập Địa chỉ của bạn.
+                </div>
+              </div>
+  
+              <div class="col-md-5">
+                <label for="country" class="form-label">Tỉnh/Thành phố</label>
+                <select class="form-select" id="country" required="">
+                    <option value="">Vui lòng chọn...</option>
+                    <option value="1">Thành phố Hồ Chí Minh</option>
+                    <option value="2">Hà Nội</option>
+                    <option value="3">Bình Dương</option>
+                    <option value="4">Long An</option>
+                    <option value="5">Cà Mau</option>
+                </select>
+                <div class="invalid-feedback">
+                  Vui lòng chọn Tỉnh/Thành phố của bạn.
+                </div>
+              </div>
+  
+              <div class="col-md-4">
+                <label for="state" class="form-label">Quận/Huyện</label>
+                <select class="form-select" id="state" required="">
+                    <option value="">Vui lòng chọn...</option>
+                    <option value="1">Quận 1</option>
+                    <option value="2">Quận 3</option>
+                    <option value="3">Quận Bình Thạnh</option>
+                    <option value="4">Thủ Dầu Một</option>
+                    <option value="5">Dĩ An</option>
+                    <option value="6">Bến Cát</option>
+                    <option value="7">Bến Lức</option>
+                    <option value="8">Châu Thành</option>
+                    <option value="9">Cần Đước</option>
+                    <option value="10">An Lộc</option>
+                    <option value="11">Tân Định</option>
+                    <option value="12">Tân Lợi</option>
+                </select>
+                <div class="invalid-feedback">
+                  Vui lòng nhập Quận/Huyện của bạn.
+                </div>
+              </div>
+  
+              <div class="col-md-3">
+                <label for="zip" class="form-label">Mã Bưu Điện</label>
+                <input type="text" class="form-control" id="zip" placeholder="888888" required="">
+                <div class="invalid-feedback">
+                  Vui lòng nhập Mã Bưu Điện của bạn.
+                </div>
+              </div>
+            </div>
+  
+            <hr class="my-4">
+  
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="same-address">
+              <label class="form-check-label" for="same-address">Vận chuyển hàng đến địa chỉ trên</label>
+            </div>
+  
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="save-info">
+              <label class="form-check-label" for="save-info">Lưu thông tin</label>
+            </div>
+  
+            <hr class="my-4">
+  
+            <h4 class="mb-3">Phương thức thanh toán</h4>
+  
+            <div class="my-3">
+              <div class="form-check">
+                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+                <label class="form-check-label" for="credit">Thẻ tín dụng</label>
+              </div>
+              <div class="form-check">
+                <input id="cash" name="paymentMethod" type="radio" class="form-check-input" required="">
+                <label class="form-check-label" for="cash">Tiền mặt</label>
+              </div>
+              <div class="form-check">
+                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
+                <label class="form-check-label" for="paypal">PayPal</label>
+              </div>
+            </div>
+  
+            <div class="row gy-3">
+              <div class="col-md-6">
+                <label for="cc-name" class="form-label">Tên chủ thẻ</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="NGUYEN VAN A" required="">
+                <div class="invalid-feedback">
+                  Vui lòng nhập Tên chủ thẻ.
+                </div>
+              </div>
+  
+              <div class="col-md-6">
+                <label for="cc-number" class="form-label">Số thẻ</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="1234 XXXX YYYY ZZZZ" required="">
+                <div class="invalid-feedback">
+                  Vui lòng nhập Số thẻ.
+                </div>
+              </div>
+  
+              <div class="col-md-3">
+                <label for="cc-expiration" class="form-label">Thời hạn</label>
+                <input type="text" class="form-control" id="cc-expiration" placeholder="01/01" required="">
+                <div class="invalid-feedback">
+                  Vui lòng nhập Thời hạn.
+                </div>
+              </div>
+  
+              <div class="col-md-3">
+                <label for="cc-cvv" class="form-label">CVV</label>
+                <input type="text" class="form-control" id="cc-cvv" placeholder="XXX" required="">
+                <div class="invalid-feedback">
+                  Vui lòng nhập CVV Code.
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+    </div>
+    <div class="btn-payment-complete">
+        <hr class="my-4">
+        <button class="w-100 btn btn-primary btn-lg" type="submit">Xác nhận</button>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-second">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 col-md-6">
+                    <h3 class="footer-head">Sản phẩm</h3>
+                    <ul class="menu">
+                        <li><a href="#">Trung tâm hỗ trợ</a></li>
+                        <li><a href="#">Liên hệ chúng tôi</a></li>
+                        <li><a href="#">Hỗ trợ sản phẩm</a></li>
+                        <li><a href="#">Bảo hành</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 col-md-6">
+                    <h3 class="footer-head">Dịch vụ</h3>
+                    <ul class="menu">
+                        <li><a href="#">Trung tâm hỗ trợ</a></li>
+                        <li><a href="#">Liên hệ chúng tôi</a></li>
+                        <li><a href="#">Hỗ trợ sản phẩm</a></li>
+                        <li><a href="#">Bảo hành</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 col-md-6">
+                    <h3 class="footer-head">Hỗ trợ</h3>
+                    <ul class="menu">
+                        <li><a href="#">Góp ý</a></li>
+                        <li><a href="#">Liên hệ chúng tôi</a></li>
+                        <li><a href="#">Hỗ trợ</a></li>
+                        <li><a href="#">Bảo hành</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="contact">
+                        <h3 class="contact-header">
+                            DTT Store
+                        </h3>
+                        <ul class="contact-socials">
+                            <li><a href="#">
+                                    <i class='bx bxl-facebook-circle'></i>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class='bx bxl-instagram-alt'></i>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class='bx bxl-youtube'></i>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class='bx bxl-twitter'></i>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="subscribe">
+                        <input type="email" placeholder="Nhập Email của bạn">
+                        <button>Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <!-- app js -->
+    <script src="./js/app.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

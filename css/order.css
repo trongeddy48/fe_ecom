@@ -21,12 +21,13 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif !important;
     overflow-x: hidden;
     position: relative;
     background-color: var(--main-bg-color);
     overflow-x: hidden;
-    background: #eee;
+    min-height: 1500px;
+    margin: 0 20px 0 20px;
 }
 
 button {
@@ -78,6 +79,7 @@ img {
 }
 
 .top-header {
+    margin-top: 5px;
     height: 30px;
     display: flex;
     justify-content: space-between;
@@ -120,7 +122,7 @@ ul.devided > li:last-child {
     visibility: hidden;
     position: absolute;
     top: calc(100% + 10px);
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     flex-direction: column;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0;
     transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
@@ -274,354 +276,6 @@ ul.devided > li:last-child {
 
 .box {
     padding: 20px;
-}
-
-.hero {
-    height: calc(
-        100vh -
-            (
-                var(--top-header-size) + var(--mid-header-size) +
-                    var(--bottom-header-size)
-            )
-    );
-    padding: 0 20px;
-}
-
-.slider,
-.slider .container {
-    height: 100%;
-    position: relative;
-}
-
-.slide {
-    height: 0;
-    position: absolute;
-    display: flex;
-    inset: 0;
-    overflow: hidden;
-    visibility: hidden;
-}
-
-.slide.active {
-    visibility: visible;
-    height: 100%;
-}
-
-.slide .info {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-}
-
-.info-content h2 {
-    font-size: 70px;
-    margin: 10px 0 35px;
-}
-
-.info-content button {
-    margin-top: 30px;
-}
-
-.slide .img {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.btn-flat {
-    display: inline-block;
-    border: 2px solid var(--btn-border-color);
-    background-color: var(--btn-bg);
-    color: var(--btn-color);
-    padding: 15px 35px;
-    font-size: 15px;
-    outline: 0;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-.btn-hover {
-    transition: all 0.3s ease-in-out;
-}
-
-.btn-hover:hover {
-    background-color: var(--btn-color);
-    color: var(--btn-bg);
-}
-
-.slide-controll {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    outline: 0;
-    border: 0;
-    border-radius: 50%;
-    font-size: 25px;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    transition: all 0.3s cubic-bezier(0.77, 0, 0.175, 1);
-}
-
-.slide-controll:hover {
-    background-color: var(--btn-bg);
-    color: var(--btn-color);
-}
-
-.slide-next {
-    right: -80px;
-}
-
-.slide-prev {
-    left: -80px;
-}
-
-.slider:hover .slide-next {
-    right: 50px;
-}
-
-.slider:hover .slide-prev {
-    left: 50px;
-}
-
-/* slide animation */
-.top-down {
-    transform: translateY(-100%);
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.8s cubic-bezier(0.77, 0, 0.175, 1);
-}
-
-.slide.active .top-down {
-    transform: translateY(0);
-    opacity: 1;
-    visibility: visible;
-}
-
-.right-left {
-    transform: translateX(100%);
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.8s cubic-bezier(0.77, 0, 0.175, 1);
-}
-
-.slide.active .right-left {
-    transform: translateX(0);
-    opacity: 1;
-    visibility: visible;
-}
-
-.left-right {
-    transform: translateX(-100%);
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.8s cubic-bezier(0.77, 0, 0.175, 1);
-}
-
-.slide.active .left-right {
-    transform: translateX(0);
-    opacity: 1;
-    visibility: visible;
-}
-/* end slide animation */
-
-.trans-delay-0-2 {
-    transition-delay: 0.2s;
-}
-.trans-delay-0-4 {
-    transition-delay: 0.4s;
-}
-
-.trans-delay-0-6 {
-    transition-delay: 0.6s;
-}
-
-.trans-delay-0-8 {
-    transition-delay: 0.8s;
-}
-
-.promotion {
-    padding: 15px;
-}
-
-.promotion [class*="col-"] {
-    padding: 15px;
-}
-
-.promotion-box {
-    display: flex;
-    background-color: var(--third-bg-color);
-    position: relative;
-}
-
-.promotion-box .text {
-    flex-grow: 1;
-    padding: 20px;
-}
-
-.promotion-box .text h3 {
-    font-size: 25px;
-}
-
-.promotion-box .text button {
-    margin-top: 30px;
-}
-
-.promotion-box img {
-    width: 150px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.promotion-box:hover img {
-    transform: scale(1.1);
-}
-
-.section {
-    padding: 60px 0;
-}
-
-.section-header,
-.section-footer {
-    text-align: center;
-    margin: 80px 0 70px;
-    text-transform: uppercase;
-}
-
-.section-header h2 {
-    font-size: 40px;
-}
-
-.product-card {
-    background-color: var(--main-bg-color);
-    transition: all 0.3s ease-in-out;
-}
-
-.product-card:hover {
-    background-color: var(--second-bg-color);
-}
-
-.product-card-img {
-    height: 300px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.product-card-img img {
-    max-height: 100%;
-    transition: all 0.3s ease-in-out;
-}
-
-.product-card-img img:nth-child(2) {
-    display: none;
-}
-
-.product-card:hover .product-card-img img:nth-child(1) {
-    display: none;
-}
-
-.product-card:hover .product-card-img img:nth-child(2) {
-    display: block;
-}
-
-.product-card-info {
-    padding: 20px;
-    text-align: center;
-    position: relative;
-}
-
-.product-card-name {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.product-card-price {
-    font-size: 15px;
-}
-
-.product-card-price .curr-price {
-    margin-left: 5px;
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--red);
-}
-
-.product-btn {
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(20px);
-    transition: all 0.3s ease-in-out;
-}
-
-.product-card:hover .product-btn {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-.product-btn > * ~ * {
-    margin-left: 5px;
-}
-
-.btn-shop-now,
-.btn-cart-add {
-    font-size: 15px;
-    padding: 5px 10px;
-    line-height: 17px;
-}
-
-.sp-item-name {
-    font-size: 55px;
-    font-weight: 600;
-    margin-bottom: 30px;
-}
-
-.sp-item-img {
-    height: 370px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.sp-item-description {
-    margin-bottom: 60px;
-    text-align: justify;
-}
-
-.blog {
-    display: flex;
-    margin-bottom: 60px;
-}
-
-.blog-img,
-.blog-info {
-    width: 50%;
-}
-
-.blog-info {
-    padding: 50px;
-}
-
-.blog-title {
-    font-size: 30px;
-    margin-bottom: 30px;
-}
-
-.blog-preview {
-    text-align: justify;
-    margin-bottom: 50px;
 }
 
 footer {
@@ -915,7 +569,7 @@ footer ul li {
     text-align: justify;
     line-height: 26px;
     font-size: 16px;
-    height: 350px;
+    height: 600px;
     overflow-y: hidden;
     position: relative;
 }
@@ -1159,62 +813,16 @@ footer ul li {
     }
 }
 
-/* css-comment */
-
-    .comment-box{
-        display: flex;
-    }
-
-    .comment-input {
-        width: 100%;
-        resize: none;
-        font-size: 18px;
-        padding: 10px;
-        font-family: "Poppins", sans-serif;
-    }
-
-    .comment-box img {
-        border-radius: 100%;
-        width: 50px;
-        height: 50px;
-        margin: 10px;
-    }
-    
-    .btn-comment {
-        width: 100%;
-        text-align: right;
-    }
-
-    .btn-comment .btn-postcmt {
-        background-color: #6cacd6;
-        color: #fff;
-        border: none;
-        padding: 10px;
-        border-radius: 5px;
-        margin-top: 10px;
-    }
-
-    .btn-comment .btn-cancel {
-        background-color: #fff;
-        color: #6cacd6;
-        border: 1px solid #6cacd6;
-        padding: 10px;
-        border-radius: 5px;
-        margin-top: 10px;
-    }
-
-    .btn-comment .btn-postcmt:hover {
-        background-color: #009E0F;
-        color: #fff;
-    }
-
-    .btn-comment .btn-cancel:hover {
-        background-color: #DA2128;
-        color: #fff;
-    }
-
-
-/* end css-comment */
+.btn-payment-complete {
+    background-color: var(--main-bg-color);
+    color: var(--main-color);
+    border: none;
+    padding: 20px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 @media only screen and (max-width: 750px) {
     .hero {
