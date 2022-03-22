@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+    <style>
+        .rate-area {
+            float: left;
+            border-style: none;
+        }
+
+        .rate-area:not(:checked) > input {
+            position: absolute;
+            top: -9999px;
+            clip: rect(0, 0, 0, 0);
+        }
+
+        .rate-area:not(:checked) > label {
+            float: right;
+            width: 0.8em;
+            overflow: hidden;
+            white-space: nowrap;
+            cursor: pointer;
+            font-size: 180%;
+            color: lightgrey;
+        }
+
+        .rate-area:not(:checked) > label:before {
+            content: "★";
+        }
+
+        .rate-area > input:checked ~ label {
+            color: gold;
+        }
+
+        .rate-area:not(:checked) > label:hover,
+        .rate-area:not(:checked) > label:hover ~ label {
+            color: gold;
+        }
+
+        .rate-area > input:checked + label:hover,
+        .rate-area > input:checked + label:hover ~ label,
+        .rate-area > input:checked ~ label:hover,
+        .rate-area > input:checked ~ label:hover ~ label,
+        .rate-area > label:hover ~ input:checked ~ label {
+            color: gold;
+    }
+    </style>
+</head>
+<body>
+    <ul class="rate-area">
+        <input type="radio" class="getRating" id="5-star" name="rating" value="5" /><label for="5-star" title="Amazing">5 stars</label>
+        <input type="radio" class="getRating" id="4-star" name="rating" value="4" /><label for="4-star" title="Good">4 stars</label>
+        <input type="radio" class="getRating" id="3-star" name="rating" value="3" /><label for="3-star" title="Average">3 stars</label>
+        <input type="radio" class="getRating" id="2-star" name="rating" value="2" /><label for="2-star" title="Not Good">2 stars</label>
+        <input type="radio" class="getRating" id="1-star" name="rating" value="1" /><label for="1-star" title="Bad">1 star</label>
+    </ul>
+
+    <input type="hidden" id="test">
+</body>
+</html>
+
+<script>
+    $(".getRating").on("click", function(){
+        $("#test").val($(this).val());
+    })
+</script>
