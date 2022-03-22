@@ -8,6 +8,14 @@ body{
     background: rgb(219, 226, 226);
 }
 
+.container{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .row{
     background: white;
     border-radius: 30px;
