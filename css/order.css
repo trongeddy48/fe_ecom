@@ -151,6 +151,10 @@ ul.devided > li:last-child {
     font-weight: 700;
 }
 
+.logo:hover {
+    color: black !important;
+}
+
 .mb-logo {
     font-size: 25px;
     font-weight: 700;
@@ -218,6 +222,10 @@ ul.devided > li:last-child {
 
 .main-menu > li:hover {
     border-bottom: 2px solid var(--red);
+}
+
+.main-menu > li > a:hover {
+    color: black !important;
 }
 
 /* mega menu */
