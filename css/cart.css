@@ -506,7 +506,7 @@ ul.devided > li:last-child {
 }
 
 .promotion-box .text input {
-    width: 10%;
+    width: 20%;
     text-align: center;
     padding: 15px;
     border: 1px solid var(--btn-border-color);
@@ -514,6 +514,8 @@ ul.devided > li:last-child {
     font-size: 15px;
     color: var(--btn-color);
     background-color: var(--btn-bg);
+    margin: auto;
+    font-weight: 550;
 }
 
 input::-webkit-outer-spin-button,
