@@ -314,7 +314,105 @@ nav .profile .profile-link a:hover {
 }
 /* NAVBAR */
 
+* {
+	box-sizing: border-box;
+}
 
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	margin-top: 20px;
+}
+
+td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+tr:hover {
+	background-color: #dddddd;
+}
+
+.btn-add {
+	width: 40px;
+	text-decoration: none;
+	color: black;
+	border: 1px solid black;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 5px;
+}
+.btn-add:hover {
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+
+.btn-edit {
+	width: 40px;
+	text-decoration: none;
+	background-color: rgb(212, 238, 98);
+	color: black;
+	border: 1px solid black;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 5px;
+}
+.btn-edit:hover {
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+
+.btn-delete {
+	width: 40px;
+	text-decoration: none;
+	background-color: rgb(238, 102, 102);
+	color: black;
+	border: 1px solid black;
+	padding: 10px;
+	margin: 10px; 
+	border-radius: 5px;
+}
+.btn-delete:hover {
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+.modal-body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.modal-body input{
+	width: 100%;
+	margin: 5px 10px 15px 5px !important;
+	padding: 10px;
+	font-size: 16px;
+}
+.modal-body p {
+	margin-top: 20px;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.modal-body-left {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 10px;
+}
+
+.modal-body-right {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 10px;
+}
 
 /* MAIN */
 main {
