@@ -4,11 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-	<link rel="stylesheet" href="../admin/baloCRUD.css">
+	<link rel="stylesheet" href="../admin/adminCRUD.css">
     <!-- bootstrap -->
 	<!-- icon -->
 	<link rel="icon" href="../admin/img/TTDStore_logo.png">    
-	<title>DTT Store Admin - Hàng hóa</title>
+	<title>DTT Store Admin - Admin</title>
 </head>
 <body>
 	
@@ -21,10 +21,10 @@
 			<li>
 				<a href="#" class="active"><i class='bx bxs-inbox icon' ></i> Quản lý <i class='bx bx-chevron-right icon-right' ></i></a>
 				<ul class="side-dropdown">
-					<li><a href="#">Sản phẩm</a></li>
-					<li><a href="#">Loại sản phẩm</a></li>
-					<li><a href="#">Nhà sản xuất</a></li>
-					<li><a href="#">Đơn hàng</a></li>
+					<li><a href="./baloCRUD.html">Sản phẩm</a></li>
+					<li><a href="./categoryCRUD.html">Loại sản phẩm</a></li>
+					<li><a href="./manufactorCRUD.html">Nhà sản xuất</a></li>
+					<li><a href="./orderCRUD.html">Đơn hàng</a></li>
 				</ul>
 			</li>
 			<li><a href="#"><i class='bx bxs-chart icon' ></i> Nhân sự</a></li>
@@ -68,13 +68,13 @@
 
 		<!-- MAIN -->
 		<main>
-			<h1 class="title">SẢN PHẨM</h1>
+			<h1 class="title">QUẢN TRỊ VIÊN</h1>
 			<ul class="breadcrumbs">
 				<li><a href="#">Trang chủ</a></li>
 				<li class="divider">/</li>
-				<li><a href="#" class="active">QL Sản phẩm</a></li>
+				<li><a href="#" class="active">QL Administrator</a></li>
 			</ul>
-			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalAdd"><i class='bx bx-plus'></i> Thêm sản phẩm</button>
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalAdd"><i class='bx bx-plus'></i> Thêm Quản trị viên</button>
             <!-- Product table -->
             <!-- Style table -->
 
@@ -83,24 +83,24 @@
                     <thead>
                         <tr>
                             <th>STT</th>
-                            <th>Tên sản phẩm</th>
-                            <th>Loại sản phẩm</th>
-                            <th>Giá</th>
-                            <th>Giới thiệu</th>
-                            <th>Số lượng</th>
-                            <th>Ảnh đại điện</th>
+                            <th>Tên Admin</th>
+                            <th>Số điện thoại</th>
+                            <th>Địa chỉ</th>
+                            <th>Email</th>
+                            <th>Mật khẩu</th>
+                            <th>Cấp bậc</th>
                             <th>Hành động</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
+                            <td>111</td>
+                            <td>Anh Da Vàng</td>
+                            <td>0123123123</td>
+                            <td>123 Vinewood, Santa Monica</td>
+                            <td>admin@gmail.com</td>
+                            <td>123123</td>
                             <td>1</td>
-                            <td>iPhone X</td>
-                            <td>iPhone</td>
-                            <td>1.200.000</td>
-                            <td>Chào em</td>
-                            <td>100</td>
-                            <td>Image</td>
                             <td>
                                 <button type="button" class="btn-edit" data-toggle="modal" data-target="#modalEdit">
                                     <i class='bx bx-edit-alt' ></i>
@@ -113,13 +113,13 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>2</td>
-                            <td>iPhone X</td>
-                            <td>iPhone</td>
-                            <td>1.200.000</td>
-                            <td>Chào em</td>
-                            <td>100</td>
-                            <td>image</td>
+                            <td>111</td>
+                            <td>Anh Da Vàng</td>
+                            <td>0123123123</td>
+                            <td>123 Vinewood, Santa Monica</td>
+                            <td>admin@gmail.com</td>
+                            <td>123123</td>
+                            <td>1</td>
                             <td>
                                 <button type="button" class="btn-edit" data-toggle="modal" data-target="#modalEdit">
                                     <i class='bx bx-edit-alt' ></i>
@@ -142,47 +142,24 @@
                 <div class="modal-content">
                     <div class="modal-header">
                       <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title">Thêm Sản Phẩm</h4>
+                      <h4 class="modal-title">Thêm Quản trị viên</h4>
                     </div>
                     <div class="modal-body">
                         <div class="modal-body-left">
-                            <p>Tên sản phẩm</p>
-                            <input type="text" placeholder="Tên sản phẩm" class="form-control my-3 p-4">
-                            <p>Giới thiệu sản phẩm</p>
-                            <input type="text" placeholder="Giới thiệu sản phẩm" class="form-control my-3 p-4">
-                            <p>Giá sản phẩm</p>
-                            <input type="text" placeholder="Giá sản phẩm" class="form-control my-3 p-4">
-                            <p>Ảnh đại diện sản phẩm</p>
-                            <input type="text" placeholder="Link ảnh đại diện" class="form-control my-3 p-4">
-                            <p>Ảnh phụ đại diện sản phẩm</p>
-                            <input type="text" placeholder="Link ảnh phụ" class="form-control my-3 p-4">
-                            <p>Nhà sản xuất</p>
+                            <p>Tên Admin</p>
+                            <input type="text" placeholder="Tên Admin" class="form-control my-3 p-4">
+                            <p>Số điện thoại</p>
+                            <input type="text" placeholder="Số điện thoại" class="form-control my-3 p-4">
+                            <p>Địa chỉ</p>
+                            <input type="text" placeholder="Địa chỉ" class="form-control my-3 p-4">
+                            <p>Email</p>
+                            <input type="text" placeholder="Email" class="form-control my-3 p-4">
+                            <p>Mật khẩu</p>
+                            <input type="text" placeholder="Mật khẩu" class="form-control my-3 p-4">
+                            <p>Cấp bật</p>
                                 <select class="form-control my-3 p-4">
-                                    <option>Yame</option>
-                                    <option>QD Foundation</option>
-                                    <option>LA</option>
-                                    <option>EN</option>
-                                    <option>JAP</option>
-                                </select>
-                          </div>
-                          <div class="modal-body-left">
-                              <p>Ảnh chi tiết thứ nhất sản phẩm</p>
-                              <input type="text" placeholder="Link ảnh chi tiết thứ nhất" class="form-control my-3 p-4">
-                              <p>Ảnh chi tiết thứ hai sản phẩm</p>
-                              <input type="text" placeholder="Link ảnh chi tiết thứ hai" class="form-control my-3 p-4">
-                              <p>Ảnh chi tiết thứ ba sản phẩm</p>
-                              <input type="text" placeholder="Link ảnh chi tiết thứ ba" class="form-control my-3 p-4">
-                              <p>Ảnh chi tiết thứ tư sản phẩm</p>
-                              <input type="text" placeholder="Link ảnh chi tiết thứ tư" class="form-control my-3 p-4">
-                              <p>Số lượng</p>
-                              <input type="text" placeholder="Link ảnh chi tiết thứ tư" class="form-control my-3 p-4">
-                              <p>Loại sản phẩm</p>
-                                <select class="form-control my-3 p-4">
-                                    <option>iPhone</option>
-                                    <option>Samsung</option>
-                                    <option>Oppo</option>
-                                    <option>Vivo</option>
-                                    <option>Xiaomi</option>
+                                    <option selected="selected">1</option>
+                                    <option>2</option>
                                 </select>
                           </div>
                     </div>
@@ -201,10 +178,10 @@
                 <div class="modal-content">
                     <div class="modal-header">
                       <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title">Xóa sản phẩm</h4>
+                      <h4 class="modal-title">Xóa Quản trị viên</h4>
                     </div>
                     <div class="modal-body">
-                      <p>Bạn có chắc chắn muốn xóa sản phẩm này ?</p>
+                      <p>Bạn có chắc chắn muốn xóa Quản trị viên này ?</p>
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-danger" data-dismiss="modal">Hủy</button>
@@ -220,32 +197,25 @@
                 <div class="modal-content">
                     <div class="modal-header">
                       <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title">Cập nhật sản phẩm</h4>
+                      <h4 class="modal-title">Cập nhật Quản trị viên</h4>
                     </div>
                     <div class="modal-body">
                         <div class="modal-body-left">
-                            <p>Tên sản phẩm</p>
-                            <input type="text" placeholder="Tên sản phẩm" class="form-control my-3 p-4" value="A du` balo kia`">
-                            <p>Giới thiệu sản phẩm</p>
-                            <input type="text" placeholder="Giới thiệu sản phẩm" class="form-control my-3 p-4" value="Balo dep vl vay man !!">
-                            <p>Giá sản phẩm</p>
-                            <input type="text" placeholder="Giá sản phẩm" class="form-control my-3 p-4" value="10000000 VND">
-                            <p>Ảnh đại diện sản phẩm</p>
-                            <input type="text" placeholder="Link ảnh đại diện" class="form-control my-3 p-4" value="avatar ne`">
-                            <p>Ảnh phụ đại diện sản phẩm</p>
-                            <input type="text" placeholder="Link ảnh phụ" class="form-control my-3 p-4" value="avatar phu. ne`">
-                          </div>
-                          <div class="modal-body-left">
-                              <p>Ảnh chi tiết thứ nhất sản phẩm</p>
-                              <input type="text" placeholder="Link ảnh chi tiết thứ nhất" class="form-control my-3 p-4" value="avatar thu nhat ne`">
-                              <p>Ảnh chi tiết thứ hai sản phẩm</p>
-                              <input type="text" placeholder="Link ảnh chi tiết thứ hai" class="form-control my-3 p-4" value="avatar thu hai ne`"/>
-                              <p>Ảnh chi tiết thứ ba sản phẩm</p>
-                              <input type="text" placeholder="Link ảnh chi tiết thứ ba" class="form-control my-3 p-4" value="avatar thu ba ne`">
-                              <p>Ảnh chi tiết thứ tư sản phẩm</p>
-                              <input type="text" placeholder="Link ảnh chi tiết thứ tư" class="form-control my-3 p-4" value="avatar thu tu ne`">
-                              <p>Số lượng</p>
-                              <input type="text" placeholder="Số lượng" class="form-control my-3 p-4" value="50">
+                            <p>Tên Admin</p>
+                            <input type="text" placeholder="Tên Admin" class="form-control my-3 p-4" value="Anh Da Vàng">
+                            <p>Số điện thoại</p>
+                            <input type="text" placeholder="Số điện thoại" class="form-control my-3 p-4" value="0123123123">
+                            <p>Địa chỉ</p>
+                            <input type="text" placeholder="Địa chỉ" class="form-control my-3 p-4" value="123 Vinewood">
+                            <p>Email</p>
+                            <input type="text" placeholder="Email" class="form-control my-3 p-4" value="admin@gmail.com">
+                            <p>Mật khẩu</p>
+                            <input type="text" placeholder="Mật khẩu" class="form-control my-3 p-4" value="123123">
+                            <p>Cấp bật</p>
+                                <select class="form-control my-3 p-4">
+                                    <option selected="selected">1</option>
+                                    <option>2</option>
+                                </select>
                           </div>
                     </div>
                     <div class="modal-footer">
